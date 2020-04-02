@@ -14,6 +14,7 @@ The system holds different types of data.  Below is key information that must be
 | Business | This could be the doctors office, drug store, or any other service provider. |
 | Service | A service that is performed by a business for a patient. |
 | Pharmasuticals | Represents a perscription or medication details. |
-
+| Medical Codes | Most medical services are coded and have general meanings. |
+| Insurance | Insurance details. |
 
 ## Notes

@@ -1,4 +1,4 @@
-# Medial Database
+# Household Medical Tracking System
 
 ## Overview
 Family's get medical coverage from their employeers and throughout the year they may go to the doctor, have a perscription filed or an emergency.   Health insurance covers some but the family is still responsible for paying for part of these.   Often times, the medical bills come much later then the original visit because of the insurance company payment and the turn around time of the billing department.  Also the amount due is no often known ahead of time.  Finally at the end of the year, medical expenses are usually included in the family tax filings.   

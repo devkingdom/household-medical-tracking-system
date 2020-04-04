@@ -18,3 +18,6 @@ The system holds different types of data.  Below is key information that must be
 | Insurance | Insurance details. |
 
 ## Notes
+
+## Status
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/devkingdom/household-medical-tracking-system) 

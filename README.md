@@ -12,12 +12,15 @@ The system holds different types of data.  Below is key information that must be
 | ----------- | ----------- |
 | Patient | The person in the family who receives treatment, has a prescription, or any other item. |
 | Business | This could be the doctors office, drug store, or any other service provider. |
+| Insurance | Insurance details. |
+| Address | Used by Patient, Business and Insurance for their mailing and locations. |
+| Contact Information | Used to hold contact (phone) information. |
 | Service | A service that is performed by a business for a patient. |
 | Pharmaceuticals | Represents a prescription or medication details. |
 | Medical Codes | Most medical services are coded and have general meanings. |
-| Insurance | Insurance details. |
 
 ## Notes
 
 ## Status
 [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/devkingdom/household-medical-tracking-system) 
+

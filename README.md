@@ -1,8 +1,5 @@
 # Household Medical Tracking System
 
-## Status
-[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/devkingdom/household-medical-tracking-system) 
-
 ## Overview
 Family's get medical coverage from their employers and throughout the year they may go to the doctor, have a prescription filed or an emergency.   Health insurance covers some but the family is still responsible for paying for part of these.   Often times, the medical bills come much later then the original visit because of the insurance company payment and the turn around time of the billing department.  Also the amount due is no often known ahead of time.  Finally at the end of the year, medical expenses are usually included in the family tax filings.   
 
@@ -41,7 +38,7 @@ Once you have access to the project you'll need basic commands to interact and g
 |See Local Branches|git branch|git branch|Used to see what branches are on your local repository.|
 |See Remote Branches|git branch -r|git branch -r|Used to see what branches are on the remote server.|
 
-##Git Pod
+## Git Pod
 
 ### Status
 [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/devkingdom/household-medical-tracking-system) 
@@ -52,7 +49,7 @@ gitpod.io/#https://github.com/devkingdom/household-medical-tracking-system
 
 After doing this you should have a gitpod workspace for the project.  You'll now have this for your development.  
 
-*Note: This only needs to be done once.
+*Note:* This only needs to be done once.
 
 ## Notes
 

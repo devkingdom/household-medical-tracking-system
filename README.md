@@ -28,6 +28,7 @@ The system holds different types of data.  Below is key information that must be
 Once you have access to the project you'll need basic commands to interact and get the content.  The below is a set of commands to get you started.   Search Gooogle as there are a ton of resources to help learn git.
 
 |Concept|Command|Example|Description|
+|---|---|---|---|---|
 |Clone|git clone <repo_url>|git clone git@github.com:devkingdom/household-medical-tracking-system.git| Used to get a copy of the repository to work on it locally.  This is usually the first step in getting started.|
 |Status|git status|git status|See what you have that is not saved, new, or removed from the respoitory.   Useful before adding content.|
 |Stage Files|git add <file>|git add README.md|Used to add files to be committed to the (saved) repository.  You can use the --all to add all files at once.|

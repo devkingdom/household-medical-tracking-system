@@ -46,7 +46,7 @@ Once you have access to the project you'll need basic commands to interact and g
 
 This was setup to leverage GitPod for the development environment.  Once granted access you'll need to start a workspace up that you can use to work and develop in.  To do this you'll take the gitpod base address and add the # Github repository URL.
 
-gitpod.io/#https://github.com/devkingdom/household-medical-tracking-system
+http://gitpod.io/#https://github.com/devkingdom/household-medical-tracking-system
 
 After doing this you should have a gitpod workspace for the project.  You'll now have this for your development.  
 

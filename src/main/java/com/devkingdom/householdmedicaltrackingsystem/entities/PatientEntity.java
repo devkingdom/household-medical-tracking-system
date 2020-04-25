@@ -27,15 +27,15 @@ public class PatientEntity {
     /**
      * The first name of this patient.
      */
-    @Column(name = "first_name")
+    @Column(name = "firstname")
     private String firstName;
-    
+
     /**
      * The gender.
      */
     @Basic
     private GenderEnum gender;
-    
+
     /**
      * The unique database id.
      */
@@ -43,18 +43,18 @@ public class PatientEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "patient_id", nullable = false)
     private int id = -1;
-    
+
     /**
      * The last name of this patient.
      */
-    @Column(name = "last_name")
+    @Column(name = "lastname")
     private String lastName;
     /**
      * The middle name of this patient.
      */
-    @Column(name = "middle_name")
+    @Column(name = "middlename")
     private String middleName;
-    
+
     /**
      * {@inheritDoc}
      */
@@ -96,7 +96,7 @@ public class PatientEntity {
         }
         return true;
     }
-    
+
     /**
      * Gets the dateOfBirth
      * @return The dateOfBirth
@@ -104,7 +104,7 @@ public class PatientEntity {
     public Date getDateOfBirth() {
         return dateOfBirth;
     }
-    
+
     /**
      * Gets the firstName
      * @return The firstName
@@ -112,7 +112,7 @@ public class PatientEntity {
     public String getFirstName() {
         return firstName;
     }
-
+    
     /**
      * Gets the gender
      * @return The gender
@@ -120,7 +120,7 @@ public class PatientEntity {
     public GenderEnum getGender() {
         return gender;
     }
-
+    
     /**
      * Gets the id
      * @return The id
@@ -128,7 +128,7 @@ public class PatientEntity {
     public int getId() {
         return id;
     }
-
+    
     /**
      * Gets the lastName
      * @return The lastName
@@ -136,7 +136,7 @@ public class PatientEntity {
     public String getLastName() {
         return lastName;
     }
-
+    
     /**
      * Gets the middleName
      * @return The middleName
@@ -144,7 +144,7 @@ public class PatientEntity {
     public String getMiddleName() {
         return middleName;
     }
-
+    
     /**
      * {@inheritDoc}
      */
@@ -157,7 +157,7 @@ public class PatientEntity {
         result = (prime * result) + ((lastName == null) ? 0 : lastName.hashCode());
         return result;
     }
-
+    
     /**
      * Sets the dateOfBirth.
      * @param dateOfBirth The dateOfBirth to set
@@ -165,7 +165,7 @@ public class PatientEntity {
     public void setDateOfBirth(Date dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
-
+    
     /**
      * Sets the firstName.
      * @param firstName The firstName to set
@@ -173,7 +173,7 @@ public class PatientEntity {
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
-
+    
     /**
      * Sets the gender.
      * @param gender The gender to set
@@ -181,7 +181,7 @@ public class PatientEntity {
     public void setGender(GenderEnum gender) {
         this.gender = gender;
     }
-
+    
     /**
      * Sets the id.
      * @param id The id to set
@@ -189,7 +189,7 @@ public class PatientEntity {
     public void setId(int id) {
         this.id = id;
     }
-
+    
     /**
      * Sets the lastName.
      * @param lastName The lastName to set
@@ -197,7 +197,7 @@ public class PatientEntity {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
-
+    
     /**
      * Sets the middleName.
      * @param middleName The middleName to set
@@ -205,7 +205,7 @@ public class PatientEntity {
     public void setMiddleName(String middleName) {
         this.middleName = middleName;
     }
-
+    
     /**
      * {@inheritDoc}
      */
@@ -214,5 +214,5 @@ public class PatientEntity {
         return "PatientEntity [dateOfBirth=" + dateOfBirth + ", firstName=" + firstName + ", lastName=" + lastName
                 + ", middleName=" + middleName + "]";
     }
-
+    
 }

@@ -9,6 +9,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
 /**
  * Represents a service on a
@@ -16,9 +17,9 @@ import javax.persistence.Id;
 @Entity(name = "service")
 public class ServiceEntity {
     /**
-     * THe business that provided this service.
+     * The business that provided this service.
      */
-    // TODO one to one join
+    @OneToOne
     private BusinessEntity business;
     /**
      * Charge for this service.
@@ -45,7 +46,7 @@ public class ServiceEntity {
     /**
      * The medical code for this record.
      */
-    // TODO one to one join.
+    @OneToOne
     private MedicalCodeEntity medicalCode;
     /**
      * Extra details.
@@ -55,14 +56,14 @@ public class ServiceEntity {
     /**
      * The patient that received this service.
      */
-    // TODO one to one.
+    @OneToOne
     private PatientEntity patient;
     /**
      * A payment made for this item.
      */
     @Basic
     private double payment;
-    
+
     /**
      * Gets the business
      * @return The business
@@ -70,7 +71,7 @@ public class ServiceEntity {
     public BusinessEntity getBusiness() {
         return business;
     }
-
+    
     /**
      * Gets the cost
      * @return The cost
@@ -78,7 +79,7 @@ public class ServiceEntity {
     public double getCost() {
         return cost;
     }
-
+    
     /**
      * Gets the description
      * @return The description
@@ -86,7 +87,7 @@ public class ServiceEntity {
     public String getDescription() {
         return description;
     }
-    
+
     /**
      * Gets the discount
      * @return The discount
@@ -94,7 +95,7 @@ public class ServiceEntity {
     public double getDiscount() {
         return discount;
     }
-    
+
     /**
      * Gets the id
      * @return The id
@@ -102,7 +103,7 @@ public class ServiceEntity {
     public int getId() {
         return id;
     }
-    
+
     /**
      * Gets the medicalCode
      * @return The medicalCode
@@ -110,7 +111,7 @@ public class ServiceEntity {
     public MedicalCodeEntity getMedicalCode() {
         return medicalCode;
     }
-    
+
     /**
      * Gets the notes
      * @return The notes
@@ -118,7 +119,7 @@ public class ServiceEntity {
     public String getNotes() {
         return notes;
     }
-    
+
     /**
      * Gets the patient
      * @return The patient
@@ -126,7 +127,7 @@ public class ServiceEntity {
     public PatientEntity getPatient() {
         return patient;
     }
-    
+
     /**
      * Gets the payment
      * @return The payment
@@ -134,7 +135,7 @@ public class ServiceEntity {
     public double getPayment() {
         return payment;
     }
-
+    
     /**
      * Sets the business.
      * @param business The business to set
@@ -142,7 +143,7 @@ public class ServiceEntity {
     public void setBusiness(BusinessEntity business) {
         this.business = business;
     }
-
+    
     /**
      * Sets the cost.
      * @param cost The cost to set
@@ -150,7 +151,7 @@ public class ServiceEntity {
     public void setCost(double cost) {
         this.cost = cost;
     }
-
+    
     /**
      * Sets the description.
      * @param description The description to set
@@ -158,7 +159,7 @@ public class ServiceEntity {
     public void setDescription(String description) {
         this.description = description;
     }
-
+    
     /**
      * Sets the discount.
      * @param discount The discount to set
@@ -166,7 +167,7 @@ public class ServiceEntity {
     public void setDiscount(double discount) {
         this.discount = discount;
     }
-
+    
     /**
      * Sets the id.
      * @param id The id to set
@@ -174,7 +175,7 @@ public class ServiceEntity {
     public void setId(int id) {
         this.id = id;
     }
-
+    
     /**
      * Sets the medicalCode.
      * @param medicalCode The medicalCode to set
@@ -182,7 +183,7 @@ public class ServiceEntity {
     public void setMedicalCode(MedicalCodeEntity medicalCode) {
         this.medicalCode = medicalCode;
     }
-
+    
     /**
      * Sets the notes.
      * @param notes The notes to set
@@ -190,7 +191,7 @@ public class ServiceEntity {
     public void setNotes(String notes) {
         this.notes = notes;
     }
-
+    
     /**
      * Sets the patient.
      * @param patient The patient to set
@@ -198,7 +199,7 @@ public class ServiceEntity {
     public void setPatient(PatientEntity patient) {
         this.patient = patient;
     }
-
+    
     /**
      * Sets the payment.
      * @param payment The payment to set
@@ -206,5 +207,5 @@ public class ServiceEntity {
     public void setPayment(double payment) {
         this.payment = payment;
     }
-    
+
 }

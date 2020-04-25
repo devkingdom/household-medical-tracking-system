@@ -6,11 +6,14 @@ package com.devkingdom.householdmedicaltrackingsystem.entities;
 import java.util.Date;
 
 import javax.persistence.Basic;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
 /**
  * Represents prescriptions or medication.
@@ -37,9 +40,9 @@ public class PharmaceuticalEntity {
     /**
      * The patient this is for.
      */
-    // @OneToOne
+    @OneToOne(fetch = FetchType.LAZY, cascade = { CascadeType.MERGE, CascadeType.PERSIST })
     private PatientEntity patient;
-    
+
     /**
      * Gets the expiration
      * @return The expiration
@@ -47,7 +50,7 @@ public class PharmaceuticalEntity {
     public Date getExpiration() {
         return expiration;
     }
-    
+
     /**
      * Gets the id
      * @return The id
@@ -55,7 +58,7 @@ public class PharmaceuticalEntity {
     public int getId() {
         return id;
     }
-    
+
     /**
      * Gets the manufacturer
      * @return The manufacturer
@@ -63,7 +66,7 @@ public class PharmaceuticalEntity {
     public String getManufacturer() {
         return manufacturer;
     }
-    
+
     /**
      * Gets the patient
      * @return The patient
@@ -71,7 +74,7 @@ public class PharmaceuticalEntity {
     public PatientEntity getPatient() {
         return patient;
     }
-    
+
     /**
      * Sets the expiration.
      * @param expiration The expiration to set
@@ -79,7 +82,7 @@ public class PharmaceuticalEntity {
     public void setExpiration(Date expiration) {
         this.expiration = expiration;
     }
-    
+
     /**
      * Sets the id.
      * @param id The id to set
@@ -87,7 +90,7 @@ public class PharmaceuticalEntity {
     public void setId(int id) {
         this.id = id;
     }
-    
+
     /**
      * Sets the manufacturer.
      * @param manufacturer The manufacturer to set
@@ -95,7 +98,7 @@ public class PharmaceuticalEntity {
     public void setManufacturer(String manufacturer) {
         this.manufacturer = manufacturer;
     }
-    
+
     /**
      * Sets the patient.
      * @param patient The patient to set

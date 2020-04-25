@@ -1,59 +1,112 @@
+package com.devkingdom.householdmedicaltrackingsystem.models;
+
 public class Patient {
-   private double patientid = 14478228;
-   private String firstname = "Bradley";
-   private String middlename = "John";
-   private String lastname = "West";
-   private double dateOfBirth = 05-31-1978;
-   private GenderEnum male;
-   private double insuranceid = 567898765;
 
-   public double getPatientid() {
-        return patientid;
-   }
+    private double dateOfBirth;
 
-    public void setPatientid(double patientid) {
-        this.patientid = patientid;
-    }
+    private String firstName;
 
-   public String getFirstame() {
-        return firstname;
-   }
+    private GenderEnum gender;
 
-        public void setFirstname(String firstname) {
-        this.firstname = firstname;
-        }
-        
-    public String getMiddlename() {
-        return middlename; 
-    }
+    private Insurance insuranceid;
 
-        public void setMiddlename(String middlename) {
-        this.middlename = middlename;
-        }
+    private String lastName;
 
-    public String getLastname() {
-        return lastname;
-    }
+    private String middleName;
 
-        public void setLastname(String lastname) {
-        this.lastname = lastname;
-        }
-
-    public double getDateofbirth() {
+    /**
+     * Gets the dateOfBirth
+     * @return The dateOfBirth
+     */
+    public double getDateOfBirth() {
         return dateOfBirth;
     }
 
-    public void setDateofbirth(double dateOfBirth) {
-        this.dateOfBirth = dateOfBirth;
+    /**
+     * Gets the firstName
+     * @return The firstName
+     */
+    public String getFirstName() {
+        return firstName;
     }
 
-    public double getInsuranceid() {
+    /**
+     * Gets the gender
+     * @return The gender
+     */
+    public GenderEnum getGender() {
+        return gender;
+    }
+
+    /**
+     * Gets the insuranceid
+     * @return The insuranceid
+     */
+    public Insurance getInsuranceid() {
         return insuranceid;
     }
 
-    public void setInsuranceid(double insuranceid) {
-        this.insuranceid = insuranceid;
-    } }
-    
-    
+    /**
+     * Gets the lastName
+     * @return The lastName
+     */
+    public String getLastName() {
+        return lastName;
+    }
 
+    /**
+     * Gets the middleName
+     * @return The middleName
+     */
+    public String getMiddleName() {
+        return middleName;
+    }
+
+    /**
+     * Sets the dateOfBirth.
+     * @param dateOfBirth The dateOfBirth to set
+     */
+    public void setDateOfBirth(double dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
+    }
+
+    /**
+     * Sets the firstName.
+     * @param firstName The firstName to set
+     */
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    /**
+     * Sets the gender.
+     * @param gender The gender to set
+     */
+    public void setGender(GenderEnum gender) {
+        this.gender = gender;
+    }
+
+    /**
+     * Sets the insuranceid.
+     * @param insuranceid The insuranceid to set
+     */
+    public void setInsuranceid(Insurance insuranceid) {
+        this.insuranceid = insuranceid;
+    }
+    
+    /**
+     * Sets the lastName.
+     * @param lastName The lastName to set
+     */
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+    
+    /**
+     * Sets the middleName.
+     * @param middleName The middleName to set
+     */
+    public void setMiddleName(String middleName) {
+        this.middleName = middleName;
+    }
+}

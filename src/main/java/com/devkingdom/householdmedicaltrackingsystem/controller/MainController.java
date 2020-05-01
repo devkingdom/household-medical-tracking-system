@@ -31,12 +31,12 @@ import io.swagger.annotations.ApiOperation;
 @RestController
 @RequestMapping(IConstants.ROOT_ENDPOINT)
 @Api(tags = "Medical")
-@CrossOrigin(origins = "http://localhost:8080")
+@CrossOrigin()
 public class MainController {
-    
+
     @Autowired(required = true)
     private IPatientEntityRepository patientRepository;
-    
+
     /**
      * Gets all the patients
      * @param request The request.
@@ -46,10 +46,10 @@ public class MainController {
     @ApiOperation(tags = "Patients", value = "Gets all the patients registered")
     public Iterable<PatientEntity> getPatients(
             HttpServletRequest request) {
-
+        
         return patientRepository.findAll();
     }
-    
+
     /**
      * Gets all the patients
      * @param request The request.
@@ -62,12 +62,12 @@ public class MainController {
             @RequestParam String lastName,
             @RequestParam String dob,
             @RequestParam boolean isFemale) {
-
+        
         final PatientEntity entity = new PatientEntity();
         entity.setFirstName(firstName);
         entity.setMiddleName(middleName);
         entity.setLastName(lastName);
-
+        
         try {
             final SimpleDateFormat format = new SimpleDateFormat("mm-dd-yyy");
             entity.setDateOfBirth(format.parse(dob));
@@ -75,14 +75,14 @@ public class MainController {
         catch (final ParseException e) {
             e.printStackTrace();
         }
-
+        
         if (isFemale) {
             entity.setGender(GenderEnum.Female);
         }
         else {
             entity.setGender(GenderEnum.Male);
         }
-        
+
         return patientRepository.save(entity);
     }
 }

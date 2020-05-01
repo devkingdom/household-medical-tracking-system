@@ -1,0 +1,46 @@
+info:
+  app:
+    name: Household Medical Tracking System
+    provider: SP extreme
+    contact:
+      email: paulin59@rowan.edu
+
+server:
+  port: ${PORT:8080}
+
+spring:
+  application:
+    name: household-medical-tracking-system
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost/hmts
+    username: hmtsuser
+    password: hmts1$33
+  jpa:
+    hibernate:
+      jdbc:
+        batch_size: 1024
+        batch_versioned_data: true
+      order_inserts: true
+      order_updates: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+        format_sql: "true"
+        globally_quoted_identifiers: true
+        jdbc:
+          batch_size: 1024
+          batch_versioned_data: true
+        order_inserts: true
+        order_updates: true
+        show_sql: false
+        use_sql_comments: true
+  profiles:
+    default: default
+
+hibernate:
+  jdbc:
+    batch_size: 1024
+    batch_versioned_data: true
+  order_inserts: true
+  order_updates: true
